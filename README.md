@@ -1,2 +1,2 @@
 # webshop
-desiging a wenshop in django framework
+desiging a webshop in django framework

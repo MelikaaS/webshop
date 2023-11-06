@@ -29,5 +29,13 @@ sudo fuser -k 8000/tcp
 ```
 
 and for more extra info : *TCP Port 8000 is commonly used for development environments of web server software.*
+___________
+or by using below commands find pycharm process and kill it.
+```ruby
+ps -ef | grep -i pycharm  | grep -v grep
+```
 
-
+```ruby
+kill -9 ProcessID
+```
+-9 option means forced termination.

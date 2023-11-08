@@ -54,7 +54,7 @@ use **POST** for any request that could be used to change the state of the syste
 **POST** method is useful for :  
 Login and password form because of CSRF protection that offers more control over access.
 
-**GET** methos is useful for :  
+**GET** method is useful for :  
 large quantities of data, or for binary data, such as an image.
 a web search form
 

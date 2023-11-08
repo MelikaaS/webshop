@@ -43,7 +43,7 @@ kill -9 ProcessID
 __________
 some useful information about **POST** and **GET**
 _____
-GET and POST are the only HTTP methods to use when dealing with forms.
+**GET** and **POST** are the only HTTP methods to use when dealing with forms.
 
 Django’s login form is returned using the **POST** method, in which the browser bundles up the form data, encodes it for transmission, sends it to the server, and then receives back its response.
 use **POST** for any request that could be used to change the state of the system - for example, a request that makes changes in the database.

@@ -39,3 +39,24 @@ ps -ef | grep -i pycharm  | grep -v grep
 kill -9 ProcessID
 ```
 -9 option means forced termination.
+
+__________
+some useful information about **POST** and **GET**
+_____
+GET and POST are the only HTTP methods to use when dealing with forms.
+
+Django’s login form is returned using the **POST** method, in which the browser bundles up the form data, encodes it for transmission, sends it to the server, and then receives back its response.
+use **POST** for any request that could be used to change the state of the system - for example, a request that makes changes in the database.
+
+**GET** bundles the submitted data into a string, and uses this to compose a URL. The URL contains the address where the data must be sent, as well as the data keys and values. 
+**GET** should be used only for requests that do not affect the state of the system.
+
+**POST** method is useful for :  
+Login and password form because of CSRF protection that offers more control over access.
+
+**GET** methos is useful for :  
+large quantities of data, or for binary data, such as an image.
+a web search form
+
+
+

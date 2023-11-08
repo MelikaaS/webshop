@@ -58,5 +58,28 @@ Login and password form because of CSRF protection that offers more control over
 large quantities of data, or for binary data, such as an image.
 a web search form
 
-
+______
+**Issue3**:
+```ruby
+Exception Value:	
+'WSGIRequest' object has no attribute 'get'
+```
+**The reason of error:**
+```ruby
+def login(request):
+    form = forms.LoginForm(request)
+    if request.method == 'POST':
+    ...
+   
+    return render(request,"account/login.html", context={'form': form, 'message': message})
+```
+**Solution:**
+```ruby
+def login(request):
+    form = forms.LoginForm()
+    if request.method == 'POST':
+    ...
+   
+    return render(request,"account/login.html", context={'form': form, 'message': message})
+```
 

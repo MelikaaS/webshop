@@ -82,4 +82,7 @@ def login(request):
    
     return render(request,"account/login.html", context={'form': form, 'message': message})
 ```
-
+______
+**Issue4**:
+what is UUID?
+UUID(Universal Unique Identifier) is a Python library that generates random objects of 128 bits.
